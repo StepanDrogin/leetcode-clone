@@ -7,6 +7,7 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useRecoilValue } from 'recoil';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 type AuthPageProps = {
     
@@ -28,7 +29,10 @@ const AuthPage:React.FC<AuthPageProps> = () => {
         <div className='max-w-7xl mx-auto'>
             <Navbar/>
             <div className='flex items-center justify-center h-[calc(100vh-5rem)]'>
-                <img src="/hero.png" alt="Hero image" />
+                <Image
+                src="/hero.png"
+                 alt="Hero image"
+                />
                 {authModal.isOpen && <AuthModal/>}
             </div>
         </div>
