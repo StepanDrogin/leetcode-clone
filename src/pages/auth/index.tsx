@@ -32,6 +32,8 @@ const AuthPage:React.FC<AuthPageProps> = () => {
                 <Image
                 src="/hero.png"
                  alt="Hero image"
+                 width={800}
+                 height={800}
                 />
                 {authModal.isOpen && <AuthModal/>}
             </div>
