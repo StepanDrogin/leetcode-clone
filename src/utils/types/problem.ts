@@ -17,7 +17,6 @@ export type Problem = {
 	starterCode: string;
 	handlerFunction: ((fn: any) => boolean) | string;
 	starterFunctionName: string;
-<<<<<<< HEAD
 };
 
 export type DBProblem = {
@@ -30,6 +29,4 @@ export type DBProblem = {
 	order: number;
 	videoId?: string;
 	link?: string;
-=======
->>>>>>> 6be5783e7e50cfa11b448d1be552c62d661a6b9e
 };
